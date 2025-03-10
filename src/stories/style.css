@@ -1,0 +1,42 @@
+.treeItem[data-active='true'], .subtreeTrigger[data-active='true'] {
+  background: red;
+}
+
+[data-focused='true'] {
+  outline: 1px solid blue;
+}
+
+[aria-selected='true'] {
+  background: #009fda;
+}
+
+.menuRadioGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.menubar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.data-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 100px;
+}
+
+.data-button[aria-disabled='true'] {
+  background-color: #dddddd !important;
+}
+
+.data-button:focus-visible {
+  border-radius: 100px;
+  outline: 2px solid red;
+}
